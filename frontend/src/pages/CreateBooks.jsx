@@ -16,7 +16,6 @@ const CreateBooks = () => {
 
     const handleSaveBook = () => {
         const data = {
-
             title,
             author,
             publishYear,
@@ -27,8 +26,6 @@ const CreateBooks = () => {
                 setLoading(false);
                 enqueueSnackbar('Book Created Successfully', { variant: 'success' });
                 navigate('/');
-
-
             })
             .catch((error) => {
                 console.log(error);
