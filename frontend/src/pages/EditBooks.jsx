@@ -18,7 +18,7 @@ const EditBooks = () => {
 
     useEffect(() => {
         setLoading(true);
-        axios.get(`https://book-store-api-nine.vercel.app/books/${id}`)
+        axios.get(`https://book-store-api-six.vercel.app/books/${id}`)
             .then((response) => {
                 setAuthor(response.data.author);
                 setPublishYear(response.data.publish);
