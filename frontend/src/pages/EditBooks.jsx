@@ -39,7 +39,7 @@ const EditBooks = () => {
             publishYear,
         };
         setLoading(true);
-        axios.put(`http://localhost:5000/books/${id}`, data)
+        axios.put(`https://book-store-api-six.vercel.app/books/${id}`, data)
             .then((response) => {
                 setLoading(false);
                 enqueueSnackbar('Book updated successfully', { variant: 'success' });

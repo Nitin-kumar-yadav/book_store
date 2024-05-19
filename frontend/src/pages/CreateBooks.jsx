@@ -21,7 +21,7 @@ const CreateBooks = () => {
             publishYear,
         };
         setLoading(true);
-        axios.post('http://localhost:5000/books', data)
+        axios.post('https://book-store-api-six.vercel.app/books', data)
             .then((response) => {
                 setLoading(false);
                 enqueueSnackbar('Book Created Successfully', { variant: 'success' });
